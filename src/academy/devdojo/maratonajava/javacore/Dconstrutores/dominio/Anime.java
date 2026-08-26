@@ -5,13 +5,20 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
+    private String estudio;
 
     public Anime(String nome, String tipo, int episodios,String genero){
-        System.out.println("Dentro do construtor");
+        this(); // Chamando outros construtores
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
         this.genero = genero;
+    }
+
+    public Anime(String nome, String tipo, int episodios,String genero, String estudio){
+        // O this chamando o construtor tem que ser a primeira linha do codigo
+        this(nome, tipo, episodios, genero); // sobrecarregando o construtor
+        this.estudio = estudio;
     }
 
     public Anime(){ //Criando um construtor vazio
