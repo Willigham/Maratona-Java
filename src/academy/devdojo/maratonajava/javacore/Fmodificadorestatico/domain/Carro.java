@@ -3,7 +3,8 @@ package academy.devdojo.maratonajava.javacore.Fmodificadorestatico.domain;
 public class Carro {
     private String nome;
     private double velocidadeMaxima;
-    public static double velocidadeLimite = 250;
+    private static double velocidadeLimite = 250;
+    // o atribulo static esta dizendo que o valor pertence a classe e nao poder ser mudado de forma individual
 
     public Carro(String nome, double velocidadeMaxima ){
         this.nome = nome;
@@ -16,6 +17,14 @@ public class Carro {
         System.out.println("Velocidade Máxima: " + this.velocidadeMaxima);
         System.out.println("Velocidade Limite: " + Carro.velocidadeLimite);
 
+    }
+
+    public static void setVelocidadeLimite(double velocidadeLimite){
+        Carro.velocidadeLimite = velocidadeLimite;
+    }
+
+    public static double getVelocidadeLimite(){
+        return velocidadeLimite;
     }
 
     public String getNome() {
@@ -32,10 +41,6 @@ public class Carro {
 
     public void setVelocidadeMaxima(double velocidadeMaxima) {
         this.velocidadeMaxima = velocidadeMaxima;
-    }
-
-    public double getVelocidadeLimite() {
-        return velocidadeLimite;
     }
 
 }
