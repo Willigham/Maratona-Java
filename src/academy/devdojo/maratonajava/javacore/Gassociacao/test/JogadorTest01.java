@@ -15,7 +15,7 @@ public class JogadorTest01 {
 //        }
 
         for (Jogador jogador : jogadores) {
-            jogador.impre();
+            jogador.imprime();
         }
     }
 }
