@@ -4,7 +4,7 @@ public class Seminario {
     private String titulo;
     private Professor [] professores;
     private Aluno [] alunos;
-    private Local local = new Local();
+    private Local local;
 
     public Seminario(){ return; }
 

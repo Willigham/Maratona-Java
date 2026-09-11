@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Hexercicio.dominio;
 public class Aluno {
     private String nome;
     private int idade;
-    private Seminario seminario = new Seminario();
+    private Seminario seminario;
 
     public Aluno(){
         return;
