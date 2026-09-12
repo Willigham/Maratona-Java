@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Hexercicio.dominio;
+package academy.devdojo.maratonajava.javacore.Lexercicio.dominio;
 
 public class Seminario {
     private String titulo;
