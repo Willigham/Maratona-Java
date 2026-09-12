@@ -23,12 +23,22 @@ public class Main {
 
         Seminario seminario1 = new Seminario("Fundamentos do TI", professores, alunos, local1);
         Seminario seminario2 = new Seminario("Praticas do Calculo", professores, alunos, local2);
+        Seminario seminario3 = new Seminario("Itensivão da Computação");
         Seminario [] seminarios = {seminario1, seminario2};
+        Seminario [] seminarios1 = {seminario3};
 
-        Aluno aluno = new Aluno("Robson", 17, seminario1);
+        Aluno aluno5 = new Aluno("Robson", 17, seminario1);
+        Aluno aluno6 = new Aluno("Alan", 22, seminario1);
 
-        seminario1.imprime();
-        seminario2.imprime();
+
+        aluno6.imprime();
+        aluno1.imprime();
+
+        professor1.imprime();
+        professor1.setSeminario(seminarios);
+        professor1.imprime();
+        professor2.setSeminario(seminarios1);
+        professor2.imprime();
 
     }
 }

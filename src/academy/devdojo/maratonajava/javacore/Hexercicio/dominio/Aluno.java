@@ -24,6 +24,10 @@ public class Aluno {
         System.out.println("--- DADOS DO ALUNO ---");
         System.out.println("Nome: " + this.nome);
         System.out.println("Idade: " + this.idade);
+        if (seminario == null){
+            System.out.println("Esse aluno ainda nao tem Seminário!");
+            return;
+        }
         System.out.println("Seminário Inscrito: " + seminario.getTitulo());
     }
 
