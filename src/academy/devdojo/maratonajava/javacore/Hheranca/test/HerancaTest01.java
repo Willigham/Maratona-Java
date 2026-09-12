@@ -17,7 +17,6 @@ public class HerancaTest01 {
         Funcionario funcionario = new Funcionario("Oda Nobunaga");
         funcionario.setCpf("2222222");
         funcionario.setEndereco(endereco);
-        funcionario.setSalario(200000);
         System.out.println("--------------");
         funcionario.imprime();
 
